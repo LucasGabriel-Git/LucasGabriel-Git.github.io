@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/base";
+@import "tailwindcss";
+
+:root {
+	--link-color: #1e9e6a;
+	--bg-button-color: #1e9e6a;
+	--bg-button-secondary: #1a202c;
+	--bg-input: #f7fafc;
+	--border-color: #e8e8e8;
+	--input-color: #656769;
+}
+
+body {
+	font-family: "Archivo", sans-serif;
+
+	input {
+		background-color: var(--bg-input);
+		border-color: var(--border-color);
+		color: var(--input-color);
+	}
+}
+
+a {
+	color: var(--link-color);
+}

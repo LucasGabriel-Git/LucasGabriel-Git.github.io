@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login</title>
+  </head>
+  <body class="bg-[#fff] font-['Archivo']">
+    <div class="flex h-screen">
+      <div
+        class="sm:hidden md:flex flex-1 justify-center items-center h-full bg-[#F3FFF2] hidden"
+      >
+        <div class="w-[500px]">
+          <div class="flex justify-center">
+            <img src="./images/image.svg" alt="logo" class="w-[450px]" />
+          </div>
+          <div class="flex justify-center mt-[50px]"></div>
+        </div>
+      </div>
+      <div class="flex flex-1 justify-center items-center px-6">
+        <form class="w-[327px] flex flex-col space-y-6">
+          <div class="flex flex-col">
+            <h6 class="text-base text-[#1A202C]">Bem vido de volta</h6>
+            <h1 class="text-2xl font-semibold">Entre na sua conta</h1>
+          </div>
+          <div class="flex flex-col space-y-14">
+            <div class="flex flex-col">
+              <div class="flex flex-col space-y-1 mb-8">
+                <label for="email" class="text-sm">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="exemplo@exemplo.com"
+                  class="border pl-4 py-4 rounded-sm outline-0"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <label for="senha" class="text-sm">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="senha"
+                  placeholder="********"
+                  class="border pl-4 py-4 rounded-sm outline-0"
+                />
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div class="flex items-center gap-1">
+                  <input
+                    type="checkbox"
+                    name="lembrar"
+                    id="lembrar"
+                    class="w-4 h-4"
+                  />
+                  <label for="lembrar" class="text-sm font-medium"
+                    >Lembre de mim</label
+                  >
+                </div>
+                <a href="#" class="text-sm">Esqueceu a senha?</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <button class="bg-[#1e9e6a] py-3.5 px-8 rounded-sm">
+                Entrar na conta
+              </button>
+              <button
+                class="bg-[#1A202C] text-white flex items-center justify-center gap-3 py-3.5 px-8 rounded-sm"
+              >
+                <img src="./images/google-icon.svg" alt="Ícone do Google" />
+                <span>Ou faça login com o Google</span>
+              </button>
+            </div>
+          </div>
+          <div class="flex gap-1 justify-center items-center mt-16 text-base">
+            <span>Não tem uma conta?</span>
+            <a href="#">Cadastre-se</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
